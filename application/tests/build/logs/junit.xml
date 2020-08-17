@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CodeIgniter Application Test Suite" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.477795">
+    <testsuite name="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.477795">
+      <testcase name="test_WhenYouGetAllProductThenYouGetOneProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="25" assertions="1" time="0.008676"/>
+      <testcase name="test_WhenYouSetProductThenYouGetTwoProducts" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="31" assertions="2" time="0.159002"/>
+      <testcase name="test_WhenYouGetProductByIdThenYouGetProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="44" assertions="1" time="0.007540"/>
+      <testcase name="test_WhenYouUpdateAProductThenTheProductChanged" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="50" assertions="2" time="0.181533"/>
+      <testcase name="test_WhenYouDeleteAProductThenYouGetOtherProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="69" assertions="1" time="0.121044"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
