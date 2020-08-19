@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.477795">
-    <testsuite name="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.477795">
-      <testcase name="test_WhenYouGetAllProductThenYouGetOneProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="25" assertions="1" time="0.008676"/>
-      <testcase name="test_WhenYouSetProductThenYouGetTwoProducts" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="31" assertions="2" time="0.159002"/>
-      <testcase name="test_WhenYouGetProductByIdThenYouGetProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="44" assertions="1" time="0.007540"/>
-      <testcase name="test_WhenYouUpdateAProductThenTheProductChanged" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="50" assertions="2" time="0.181533"/>
-      <testcase name="test_WhenYouDeleteAProductThenYouGetOtherProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="69" assertions="1" time="0.121044"/>
+  <testsuite name="CodeIgniter Application Test Suite" tests="8" assertions="14" errors="0" failures="0" skipped="0" time="0.033291">
+    <testsuite name="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" tests="8" assertions="14" errors="0" failures="0" skipped="0" time="0.033291">
+      <testcase name="test_WhenAccessProductThenSeeAllProduct" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="9" assertions="2" time="0.006118"/>
+      <testcase name="test_WhenAccessNotExistingProductThenYouGet404" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="42" assertions="1" time="0.005820"/>
+      <testcase name="test_WhenSuccessAddProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="58" assertions="2" time="0.005000"/>
+      <testcase name="test_WhenFailedAddProductThenRedirectedToProductCreate" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="83" assertions="2" time="0.003054"/>
+      <testcase name="test_WhenSuccessUpdateProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="107" assertions="2" time="0.003514"/>
+      <testcase name="test_WhenFailedUpdateProductThenRedirectedToProductUpdate" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="133" assertions="2" time="0.004095"/>
+      <testcase name="test_WhenSuccessDeleteProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="159" assertions="2" time="0.003429"/>
+      <testcase name="test_WhenFailedDeleteProductThenShow404" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="180" assertions="1" time="0.002261"/>
     </testsuite>
   </testsuite>
 </testsuites>

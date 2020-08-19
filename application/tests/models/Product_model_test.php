@@ -53,14 +53,13 @@ class Product_model_test extends TestCase
         $product['name'] = 'Product 3';
 
         $_POST = [
-            'id' => $product['id'],
             'name' => $product['name'],
             'price' => $product['price'],
             'image' => $product['image'],
             'description' => $product['description']
         ];
 
-        $status = $this->obj->update();
+        $status = $this->obj->update(2);
         $result = $this->obj->getById(2);
         $this->assertTrue($status);
         $this->assertEquals('Product 3', $result['name']);
