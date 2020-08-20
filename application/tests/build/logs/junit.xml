@@ -1,15 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="8" assertions="14" errors="0" failures="0" skipped="0" time="0.033291">
-    <testsuite name="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" tests="8" assertions="14" errors="0" failures="0" skipped="0" time="0.033291">
-      <testcase name="test_WhenAccessProductThenSeeAllProduct" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="9" assertions="2" time="0.006118"/>
-      <testcase name="test_WhenAccessNotExistingProductThenYouGet404" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="42" assertions="1" time="0.005820"/>
-      <testcase name="test_WhenSuccessAddProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="58" assertions="2" time="0.005000"/>
-      <testcase name="test_WhenFailedAddProductThenRedirectedToProductCreate" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="83" assertions="2" time="0.003054"/>
-      <testcase name="test_WhenSuccessUpdateProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="107" assertions="2" time="0.003514"/>
-      <testcase name="test_WhenFailedUpdateProductThenRedirectedToProductUpdate" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="133" assertions="2" time="0.004095"/>
-      <testcase name="test_WhenSuccessDeleteProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="159" assertions="2" time="0.003429"/>
-      <testcase name="test_WhenFailedDeleteProductThenShow404" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="180" assertions="1" time="0.002261"/>
+  <testsuite name="CodeIgniter Application Test Suite" tests="16" assertions="24" errors="0" failures="1" skipped="0" time="0.624183">
+    <testsuite name="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" tests="8" assertions="14" errors="0" failures="1" skipped="0" time="0.031005">
+      <testcase name="test_WhenAccessProductThenSeeAllProduct" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="9" assertions="2" time="0.005779">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Product_test::test_WhenAccessProductThenSeeAllProduct
+Failed asserting that '&lt;!DOCTYPE html&gt;\n
+&lt;html lang="en"&gt;\n
+&lt;head&gt;\n
+    &lt;meta charset="UTF-8"&gt;\n
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;\n
+    &lt;title&gt;Product Index&lt;/title&gt;\n
+&lt;/head&gt;\n
+&lt;body&gt;\n
+  \n
+  &lt;table&gt;\n
+    &lt;thead&gt;\n
+      &lt;tr&gt;\n
+        &lt;th&gt;Name&lt;/th&gt;\n
+        &lt;th&gt;Price&lt;/th&gt;\n
+        &lt;th&gt;Image&lt;/th&gt;\n
+        &lt;th&gt;Description&lt;/th&gt;\n
+        &lt;th&gt;Action&lt;/th&gt;\n
+      &lt;/tr&gt;\n
+    &lt;/thead&gt;\n
+    &lt;tbody&gt;\n
+            &lt;tr&gt;\n
+        &lt;td&gt;Pensil&lt;/td&gt;\n
+        &lt;td&gt;200&lt;/td&gt;\n
+        &lt;td&gt;\n
+          &lt;img \n
+            src="http://localhost:8080/upload/product/default.jpg" \n
+            alt="default.jpg"\n
+          &gt;\n
+        &lt;/td&gt;\n
+        &lt;td&gt;Untuk menulis&lt;/td&gt;\n
+        &lt;td&gt;\n
+          &lt;a href="http://localhost:8080/product/edit/1"&gt;Edit&lt;/a&gt;\n
+          &lt;a href="http://localhost:8080/product/delete/1"&gt;Hapus&lt;/a&gt;\n
+        &lt;/td&gt;\n
+      &lt;/tr&gt;\n
+            &lt;tr&gt;\n
+        &lt;td&gt;Pulpen&lt;/td&gt;\n
+        &lt;td&gt;1000&lt;/td&gt;\n
+        &lt;td&gt;\n
+          &lt;img \n
+            src="http://localhost:8080/upload/product/default.jpg" \n
+            alt="default.jpg"\n
+          &gt;\n
+        &lt;/td&gt;\n
+        &lt;td&gt;Untuk menggambar&lt;/td&gt;\n
+        &lt;td&gt;\n
+          &lt;a href="http://localhost:8080/product/edit/2"&gt;Edit&lt;/a&gt;\n
+          &lt;a href="http://localhost:8080/product/delete/2"&gt;Hapus&lt;/a&gt;\n
+        &lt;/td&gt;\n
+      &lt;/tr&gt;\n
+          &lt;/tbody&gt;\n
+  &lt;/table&gt;\n
+&lt;/body&gt;\n
+&lt;/html&gt;' contains "&lt;h3&gt;Pulpen&lt;/h3&gt;".
+
+/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php:39
+</failure>
+      </testcase>
+      <testcase name="test_WhenAccessNotExistingProductThenYouGet404" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="42" assertions="1" time="0.004156"/>
+      <testcase name="test_WhenSuccessAddProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="58" assertions="2" time="0.003631"/>
+      <testcase name="test_WhenFailedAddProductThenRedirectedToProductCreate" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="83" assertions="2" time="0.003864"/>
+      <testcase name="test_WhenSuccessUpdateProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="107" assertions="2" time="0.002891"/>
+      <testcase name="test_WhenFailedUpdateProductThenRedirectedToProductUpdate" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="133" assertions="2" time="0.003203"/>
+      <testcase name="test_WhenSuccessDeleteProductThenRedirectedToProductIndex" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="159" assertions="2" time="0.003880"/>
+      <testcase name="test_WhenFailedDeleteProductThenShow404" class="Product_test" classname="Product_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Product_test.php" line="180" assertions="1" time="0.003601"/>
+    </testsuite>
+    <testsuite name="Welcome_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Welcome_test.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.006116">
+      <testcase name="test_index" class="Welcome_test" classname="Welcome_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Welcome_test.php" line="13" assertions="1" time="0.002563"/>
+      <testcase name="test_method_404" class="Welcome_test" classname="Welcome_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Welcome_test.php" line="19" assertions="1" time="0.002765"/>
+      <testcase name="test_APPPATH" class="Welcome_test" classname="Welcome_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/controllers/Welcome_test.php" line="25" assertions="1" time="0.000788"/>
+    </testsuite>
+    <testsuite name="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.587061">
+      <testcase name="test_WhenYouGetAllProductThenYouGetOneProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="25" assertions="1" time="0.006515"/>
+      <testcase name="test_WhenYouSetProductThenYouGetTwoProducts" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="31" assertions="2" time="0.152760">
+        <system-out>&lt;p&gt;You did not select a file to upload.&lt;/p&gt;</system-out>
+      </testcase>
+      <testcase name="test_WhenYouGetProductByIdThenYouGetProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="44" assertions="1" time="0.003762"/>
+      <testcase name="test_WhenYouUpdateAProductThenTheProductChanged" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="50" assertions="2" time="0.264551">
+        <system-out>
+A PHP Error was encountered
+
+Severity:    Notice
+Message:     Undefined index: old_image
+Filename:    /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+Line Number: 66
+
+Backtrace:
+	File: /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+	Line: 66
+	Function: _error_handler
+
+	File: /home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php
+	Line: 62
+	Function: update
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 1154
+	Function: test_WhenYouUpdateAProductThenTheProductChanged
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 842
+	Function: runTest
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestResult.php
+	Line: 693
+	Function: runBare
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 796
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestSuite.php
+	Line: 746
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestSuite.php
+	Line: 746
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/TestRunner.php
+	Line: 652
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/Command.php
+	Line: 206
+	Function: doRun
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/Command.php
+	Line: 162
+	Function: run
+
+	File: /home/cekingx/Coding/php/crud-ci/application/tests/phpunit
+	Line: 620
+	Function: main
+
+
+</system-out>
+      </testcase>
+      <testcase name="test_WhenYouDeleteAProductThenYouGetOtherProduct" class="Product_model_test" classname="Product_model_test" file="/home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php" line="68" assertions="1" time="0.159473">
+        <system-out>
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     unlink(/home/cekingx/Coding/php/crud-ci/upload/product/.): Is a directory
+Filename:    /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+Line Number: 103
+
+Backtrace:
+	File: /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+	Line: 103
+	Function: array_map
+
+	File: /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+	Line: 76
+	Function: deleteImage
+
+	File: /home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php
+	Line: 70
+	Function: delete
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 1154
+	Function: test_WhenYouDeleteAProductThenYouGetOtherProduct
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 842
+	Function: runTest
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestResult.php
+	Line: 693
+	Function: runBare
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 796
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestSuite.php
+	Line: 746
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestSuite.php
+	Line: 746
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/TestRunner.php
+	Line: 652
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/Command.php
+	Line: 206
+	Function: doRun
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/Command.php
+	Line: 162
+	Function: run
+
+	File: /home/cekingx/Coding/php/crud-ci/application/tests/phpunit
+	Line: 620
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     unlink(/home/cekingx/Coding/php/crud-ci/upload/product/..): Is a directory
+Filename:    /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+Line Number: 103
+
+Backtrace:
+	File: /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+	Line: 103
+	Function: array_map
+
+	File: /home/cekingx/Coding/php/crud-ci/application/models/Product_model.php
+	Line: 76
+	Function: deleteImage
+
+	File: /home/cekingx/Coding/php/crud-ci/application/tests/models/Product_model_test.php
+	Line: 70
+	Function: delete
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 1154
+	Function: test_WhenYouDeleteAProductThenYouGetOtherProduct
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 842
+	Function: runTest
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestResult.php
+	Line: 693
+	Function: runBare
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestCase.php
+	Line: 796
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestSuite.php
+	Line: 746
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/Framework/TestSuite.php
+	Line: 746
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/TestRunner.php
+	Line: 652
+	Function: run
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/Command.php
+	Line: 206
+	Function: doRun
+
+	File: phar:///home/cekingx/Coding/php/crud-ci/application/tests/phpunit/phpunit/TextUI/Command.php
+	Line: 162
+	Function: run
+
+	File: /home/cekingx/Coding/php/crud-ci/application/tests/phpunit
+	Line: 620
+	Function: main
+
+
+</system-out>
+      </testcase>
     </testsuite>
   </testsuite>
 </testsuites>
